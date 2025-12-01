@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train Travel Planner - Routes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div id="loading" class="loading-overlay">
+    <div class="loader"></div>
+  </div>
+
+  <div class="routes-container">
+    <div class="sidebar">
+      <h2>Препоръчителни маршрути</h2>
+      <div id="routes"></div>
+      <div class="legend"></div>
+    </div>
+
+    <div class="map-box">
+      <div class="info-top-left" id="fromBox"></div>
+      <div class="info-top-right" id="toBox"></div>
+      <div class="info-top-center" id="timeBox"></div>
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="routes.js"></script>
+</body>
+</html>

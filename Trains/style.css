@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-box, .important-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="time"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.checkboxes label {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #00c6ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container-routes {
+  display: flex;
+}
+
+.sidebar {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.map-container {
+  width: 70%;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 600px;
+}
+
+.map-info {
+  position: absolute;
+  background: rgba(255,255,255,0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.top-left { top: 10px; left: 10px; }
+.top-right { top: 10px; right: 10px; }
+.bottom-right { bottom: 10px; right: 10px; }
+
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.green { background: green; }
+.blue { background: blue; }
+.orange { background: orange; }
+.pink { background: pink; }
+.purple { background: purple; }

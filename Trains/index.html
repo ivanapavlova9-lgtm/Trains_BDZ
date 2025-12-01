@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train Travel Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Разписание / За къде пътувате?</h1>
+    <div class="form-box">
+      <label>От къде:</label>
+      <input type="text" id="from" placeholder="Начална спирка" />
+      <label>До къде:</label>
+      <input type="text" id="to" placeholder="Крайна спирка" />
+      <label>Заминаване:</label>
+      <input type="time" id="time" value="12:30" />
+      <div class="checkboxes">
+        <label><input type="checkbox" /> Само бързи влакове</label>
+        <label><input type="checkbox" /> Само директни влакове</label>
+        <label><input type="checkbox" /> Само експресни влакове</label>
+      </div>
+      <button onclick="saveAndGo()">Напред</button>
+    </div>
+    <div class="important-box">
+      <p>Важно: Изберете начална и крайна дестинация за вашето пътуване. Електронният пътеводител ще покаже всички влакове за избрания от Вас маршрут.</p>
+    </div>
+  </div>
+  <script>
+    function saveAndGo() {
+      localStorage.setItem('from', document.getElementById('from').value);
+      localStorage.setItem('to', document.getElementById('to').value);
+      localStorage.setItem('time', document.getElementById('time').value);
+      window.location.href = 'routes.html';
+    }
+  </script>
+</body>
+</html>
